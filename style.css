@@ -1,18 +1,65 @@
-.wrapper {
-    width: 200px;
-    height: 200px;
-    margin: 10% auto;
-    border: 1px solid black;
-    overflow: hidden;
-}
-.box {
-    width: 200px;
-    height: 200px;
-    background-image: url('./img/03cad7cada519b2427a7e0ac885e3992.png');
-    background-size: cover;
-    transition: transform 1s ease;
+.card-character {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 150px;
+  }
+  
+.card-side {
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+    transition: all 1s ease-out;
+    backface-visibility: hidden;
+    position: absolute;
+    width: 320px;
 }
 
-.box:hover {
-    transform: scale(1.5, 1.5);
+.card-side.front {
+    background-image: linear-gradient(43deg, #4158D0 0%,#C850C0 46%, #FFCC70 100%);
 }
+
+.card-character:hover .card-side.front {
+    transform: rotateY(180deg);
+}
+  
+img {
+    width: 320px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #00E676;
+    margin-top: 5px;
+    font-weight: 500;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.card-side.back {
+    transform: rotateY(-180deg);
+    background-image: linear-gradient(43deg, #4158D0 0%,#C850C0 46%, #FFCC70 100%);
+}
+
+.card-character:hover .card-side.back {
+    transform: rotateY(0deg);
+}
+
+p {
+    color: green;
+    font-size: 20px;
+    text-align: justify;
+    width: 300px;
+    margin-left: 8px;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+
+

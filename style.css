@@ -1,18 +1,66 @@
-.wrapper {
-    width: 200px;
-    height: 200px;
-    margin: 10% auto;
-    border: 1px solid black;
-    overflow: hidden;
-}
-.box {
-    width: 200px;
-    height: 200px;
-    background-image: url('./img/03cad7cada519b2427a7e0ac885e3992.png');
-    background-size: cover;
-    transition: transform 1s ease;
+.card-character {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 150px;
 }
 
-.box:hover {
-    transform: scale(1.5, 1.5);
+.card-side {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    transform-style: preserve-3d; 
+    transition: all 1s ease-out;
+} 
+
+.card-side:hover {
+    transform: rotateY(180deg);
 }
+
+.front {
+    position: absolute;
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    background-image: linear-gradient(43deg, #4158D0 0%,#C850C0 46%, #FFCC70 100%);
+}
+
+.back {
+    position: absolute;
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background-image: linear-gradient(43deg, #4158D0 0%,#C850C0 46%, #FFCC70 100%);
+}
+
+img {
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #00E676;
+    margin-top: 5px;
+    font-weight: 500;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+p {
+    color: green;
+    font-size: 20px;
+    text-align: justify;
+    width: 330px;
+    margin-left: 10px;
+    margin-top: 8px;
+    font-weight: 500;
+}    

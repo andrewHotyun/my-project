@@ -1,179 +1,36 @@
-@import url('./reset.css');
-
-/* body {
-    background-color: gray;
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100vh repeat(3, 200px);
+    gap: 10px;
 }
 
-.title {
-    text-align: center;
-    color: white;
-    margin-top: 100px;
+.item {
+    border: 2px solid black;
+    background-color: coral;
 }
 
-h1 {
-    font-size: 30px;
-    padding: 15px;
+.one {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
 }
 
-h2 {
-    font-size: 18px;
+.two {
+    grid-column: 1 / 4;
 }
 
-.form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;  
-    padding: 40px;
+.three {
+    grid-column: 1 / 4;
 }
 
-input[type="text"] {
-    width: 300px;
-    height: 40px;
-    margin: 10px;
-    border: 0;
-    border-radius: 10px;
-    font-size: 16px;
+.four {
+
 }
 
-input[type="password"] {
-    width: 300px;
-    height: 40px;
-    margin: 10px;
-    border: 0;
-    border-radius: 10px;
-    font-size: 16px;
+.five {
+
 }
 
-input::placeholder {
-    padding: 20px;
-    font-size: 16px;
+.six {
+
 }
-
-.checkbox {
-    font-weight: 400;
-    color: #fff;
-    font-size: 18px;
-}
-
-input[type="checkbox"] {
-    width: 25px;
-    height: 25px;
-    margin: 10px;
-    margin-left: -153px;
-}
-
-.login {
-    margin-top: 20px;
-    width: 300px;
-    height: 40px;
-    border-radius: 10px;
-    border: 0;
-    background: rgb(203,90,46);
-    background: linear-gradient(90deg, rgba(203,90,46,1) 0%, rgba(139,56,92,1) 100%); 
-    color: white;  
-    font-size: 15px;
-}
-
-p {
-    color: white;
-    text-align: center;
-    margin-top: 10px;
-} */
-
-:root {
-    font-size: 16px;
-    --main-color: white;
-}
-
-.background {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("./img/166129-california_streaming_apple_event_wallpaper_without_logo-3840x2160.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.login-form {
-
-    color: var(--main-color);
-    width: 350px;
-    height: 600px;
-    border: 1px solid var(--main-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    padding-top: 8%;
-    border-radius: 10px;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    backdrop-filter: blur(8px);
-}
-
-.login-form * {
-    margin-top: 15px;
-}
-
-.flex-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.login-form .input {
-    border: 1px solid var(--main-color);
-    height: 1.7rem;
-    background-color: transparent;
-}
-
-.input {
-    border-radius: 10px;
-}
-
-.login-form .input::placeholder {
-    color: var(--main-color);
-}
-
-.login-form input[type="checkbox"] {
-    padding: 0;
-    margin: 0;
-    margin-right: 10px;
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    background: linear-gradient(312deg, rgba(245,162,67,1) 0%, rgba(238,111,193,0.8382703423166141) 100%);
-    position: relative;
-}
-
-.login-form input[type="checkbox"]:checked::after {
-    content: '\1F5F8';
-    color: white;
-    position: absolute;
-    top: 0;
-    margin-left: 2px;
-}
-
-.login-header {
-    font-size: 2rem;
-}
-
-.text {
-    font-size: 0.8rem;
-}
-
-.login-button {
-    color: inherit;
-    height: 2rem;
-    border: none;
-    border-radius: 10px;
-    background: linear-gradient(312deg, rgba(245,162,67,1) 0%, rgba(238,111,193,0.8382703423166141) 100%);
-}
-
-.text-bottom {
-    margin-top: auto;
-} */
- */
